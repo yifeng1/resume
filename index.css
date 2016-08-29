@@ -1,0 +1,202 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    zoom: 1;
+    font-family: '微软雅黑';
+}
+html{
+    height: 100%;
+}
+body{
+    margin: 0;
+    height: 100%;
+    background-image: url(1.jpg);
+    background-repeat: no-repeat;
+    padding-top: 20px;
+    padding-left: 500px;
+    /*body内容上方留白*/
+}
+main{
+    position:absolute;
+    top: 5%;
+    right: 20%;
+}
+section{
+    margin: 0 auto;
+    box-shadow: 2px 2px 10px #333;
+    width: 430px;
+    height: 110px;
+    position: relative;
+    border-radius: 10px;
+    padding: 15px 20px 10px 30px;
+}
+section:nth-child(2n){
+    top: -20px;
+    left: 120px;
+}
+section:nth-child(1){
+    padding-top: 10px;
+    background-color: #111a17;
+    z-index: 800;
+    /*position flex(默认z-index高于其他所有元素，如果没有手动加一个)*/
+    background-image: url(diwen.png);
+    background-size: 70%;
+    background-position: 30px -7px;
+    background-repeat: no-repeat;
+    transform: rotate(-3deg);/*scale(3)进行缩放，需并列写法transform如同时进行旋转和缩放 空格隔开*/
+    left: -70px !important;
+    /*!important优先级高*/
+}
+section:nth-child(2){
+    background-color: #dededc;
+    z-index: 700;
+    top: -13px;
+}
+section:nth-child(3){
+    background-color: #c4be66;
+    z-index: 600;
+    top: -26px;
+}
+section:nth-child(4){
+    background-color: #bc8cbc;
+    z-index: 500;
+    top: -39px;
+}
+section:nth-child(5){
+    background-color: #dc214c;
+    height: 180px;
+    z-index: 400;
+    top: -52px;
+}
+section:nth-child(6){
+    background-color: #e3efe1;
+    z-index: 300;
+    top: -65px;
+}
+section:nth-child(7){
+    background-color: #d5c2d8;
+    z-index: 200;
+    top: -78px
+}
+section:nth-child(8){
+    background-color: #c0c2d1;
+    z-index: 100;
+    top: -91px;
+    overflow: hidden;
+    /*超过标签内容隐藏*/
+}
+section:nth-child(8) h3{
+    color: white;
+}
+section:nth-child(8) h3:first-letter{
+    color: black;
+}
+section>span{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    background-image: url(1.jpg);
+}
+h1{
+    text-align: right;
+    color: white;
+    font-family: 迷你简双线体;
+    font-size: 60;
+}
+h2{
+    font-size: 35px;
+    color: blue;
+    position: relative;
+    top: -50px;
+    font-weight: normal;
+    /*100-700依次变粗*/
+}
+small{
+    font-size: 23px;
+    color: magenta;  
+}
+h3{
+    text-align: right;
+    z-index: 300;
+}
+p{
+    text-align: right;
+    font-size: 12px;
+}
+#information p:nth-of-type(2){
+    position: relative;
+    top: -55px;
+    left: -150px;
+}
+.white{
+    color: white;
+    position: relative;
+    top: -3px;
+}
+.practice{
+    text-align: left;
+    font-size: 10px;
+    position: relative;
+    top: -33px;
+}
+.skill{
+    text-align: left;
+    font-size: 12px;
+    position: relative;
+    top: -20px;
+}
+.comment{
+    text-align: left;
+    font-size: 12px;
+    position: relative;
+    top: -20px;
+}
+/*样式名为white的样式如果多个标签用同样的央视，可以用相同的class名，还可以用逗号隔开*/
+.yellow{
+    width: 154px;
+    height: 154px;
+    border-radius: 50%;
+    background-color: yellow;
+    display: inline-block;
+    opacity: 0.6; 
+    position: relative;
+    top: -40px;
+    left: 10px;
+    z-index: 300;
+}
+.blue{
+    width: 217px;
+    height: 217px;
+    border-radius: 50%;
+    background-color: blue;
+    /*display: inline-block;*/
+    opacity: 0.7;
+    position: relative;
+    top: -250px;
+    left: 100px;
+    z-index: 200;
+}
+.center{
+    position: relative;
+    left: -130px;
+}
+.develop{
+    position: relative;
+    top: -346px;
+    left: -20px;
+    font-size: 30px;
+    color: white;
+    font-weight: 600;
+    z-index: 300;
+}
+body>img{
+    width: 100%;
+    height: 260%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
